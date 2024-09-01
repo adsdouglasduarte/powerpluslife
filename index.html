@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
@@ -16,15 +19,19 @@
 <body>
     <header>
         <!--icone menu hamburger-->
-        <div class="menu-hamburger" aria-label="Menu">
+        <div class="menu-hamburger item2" aria-label="Menu">
             <span></span>
             <span></span>
             <span></span>
         </div>
         <!--logo do header-->
-        <picture id="inicio">
-            <img src="./IMAGENS/logo.png" alt="" class="logo">
-        </picture>
+        <div class="logo-content item1">
+            <picture id="inicio">
+                <img src="./IMAGENS/logo.png" alt="" class="logo">
+            </picture>
+
+            <h1 class="lato-bold">Power plus+</h1>
+        </div>
     </header>
     <!--menu de navegação-->
     <nav id="navbar">
@@ -57,11 +64,11 @@
         </picture>
         <div class="text-sobreLoja">
             <H2 id="sobre">Sobre a Loja</H2>
-            <p>Oferecemos os melhores suplementos para ajudar você a alcançar seus objetivos de musculação com qualidade e eficácia.
-            Seja para ganhar massa muscular, melhorar a performance ou garantir uma recuperação rápida.</p>
+            <p>Oferecemos os melhores suplementos para ajudar você a alcançar seus objetivos de musculação com qualidade
+                e eficácia.</p>
         </div>
     </main>
-<!--seção dos produtos-->
+    <!--seção dos produtos-->
     <section>
         <div class="title-produtos">
             <h2 id="produtos">Nossos Produtos</h2>
@@ -71,7 +78,8 @@
                 <img src="https://via.placeholder.com/190x339" alt="#">
                 <h3>Whey Protein</h3>
                 <h4>R$ 99,90</h4>
-                <p>Suporte essencial para a recuperação e ganho de massa muscular, promovendo síntese proteica eficiente.</p>
+                <p>Suporte essencial para a recuperação e ganho de massa muscular, promovendo síntese proteica
+                    eficiente.</p>
                 <button type="button"><span class="material-symbols-outlined">shopping_cart</span>
                     Adicionar +</button>
             </div>
@@ -89,7 +97,8 @@
                 <img src="https://via.placeholder.com/190x339" alt="#">
                 <h3>BCAA</h3>
                 <h4>R$ 99,90</h4>
-                <p> Aminoácidos de cadeia ramificada que auxiliam na recuperação muscular, prevenindo o catabolismo e a fadiga.</p>
+                <p> Aminoácidos de cadeia ramificada que auxiliam na recuperação muscular, prevenindo o catabolismo e a
+                    fadiga.</p>
                 <button type="button"><span class="material-symbols-outlined">shopping_cart</span>
                     Adicionar +</button>
             </div>
@@ -98,14 +107,15 @@
                 <img src="https://via.placeholder.com/190x339" alt="#">
                 <h3>Pré-Treino</h3>
                 <h4>R$ 99,90</h4>
-                <p>Energia instantânea e foco para maximizar a intensidade dos seus treinos, garantindo mais resultados.</p>
+                <p>Energia instantânea e foco para maximizar a intensidade dos seus treinos, garantindo mais resultados.
+                </p>
                 <button type="button"><span class="material-symbols-outlined">shopping_cart</span>
                     Adicionar +</button>
             </div>
 
         </div>
     </section>
-<!--seção dos resultados-->
+    <!--seção dos resultados-->
     <section>
         <div class="title-result">
             <h2 id="resultados">Resultados Reais</h2>
@@ -143,7 +153,7 @@
             </div>
         </div>
     </section>
-<!--seção do formulario-->
+    <!--seção do formulario-->
     <section>
         <div class="title-contact">
             <h2>Fale conosco</h2>
@@ -163,7 +173,7 @@
 
     <!--botão para o topo-->
     <div id="topo">
-        <span  class="material-symbols-outlined">
+        <span class="material-symbols-outlined">
             arrow_circle_up
         </span>
     </div>
@@ -185,7 +195,7 @@
     </footer>
 
 
-<!--links dos scripts-->
+    <!--links dos scripts-->
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

@@ -25,10 +25,32 @@ html {
 
 header {
     background-color: var(--color2);
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "item1 item2";
     padding: 16px;
+}
+
+.item1 {
+    grid-area: item1;
+    margin-left: 20vw;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--color1);
+    box-shadow: 2px 2px 8px var(--color1);
+    border-radius: 8px;
+}
+
+.lato-bold:hover {
+    box-shadow: 2px 2px 8px var(--color3);
 }
 
 .menu-hamburger {
@@ -48,6 +70,7 @@ header {
     display: block;
     margin-bottom: 4px;
 }
+
 /*estilo para icon close menu*/
 #menu-close {
     display: flex;
@@ -57,20 +80,32 @@ header {
 }
 
 /*estilo para icon close menu*/
-#menu-close span:hover{
+#menu-close span:hover {
     background-color: rgba(238, 181, 75, 0.411);
     border-radius: 50%;
 }
+
 #menu-close span {
     font-size: 50px;
     margin-top: 50px;
-    
+
+}
+
+.logo-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
 }
 
 .logo {
     width: 85px;
     height: auto;
-    margin-left: 33.3vw;
+    box-shadow: 2px 2px 8px var(--color3);
+    border: none;
+    border-radius: 50%;
 }
 
 /*estilo menu navegação*/
@@ -174,11 +209,13 @@ main {
     border-radius: 4px;
     box-shadow: 2px 2px 4px var(--color5);
     overflow: hidden;
-    transition: transform 0.5s ease; /* Transição suave ao aplicar o zoom */
+    transition: transform 0.5s ease;
+    /* Transição suave ao aplicar o zoom */
 }
 
 .content-produtos img:hover {
-    transform: scale(1.02); /* Aumenta a escala da imagem em 10% */
+    transform: scale(1.02);
+    /* Aumenta a escala da imagem em 10% */
 }
 
 .content-produtos h3 {
@@ -327,8 +364,8 @@ main {
 }
 
 #form-main input, textarea:focus {
-        outline-color: var(--color3);
-    }
+    outline-color: var(--color3);
+}
 
 
 #form-main textarea {
@@ -356,7 +393,7 @@ main {
 /*estilo botão topo*/
 
 #topo {
-    background-image:var(--color1);
+    background-image: var(--color1);
     text-align: center;
     font-size: 30px;
     width: 30px;
@@ -378,7 +415,7 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 82px;
+    height: 100px;
     text-align: center;
 }
 
