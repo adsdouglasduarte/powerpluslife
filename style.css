@@ -1,3 +1,4 @@
+/*reset padrão*/
 * {
     margin: 0;
     padding: 0;
@@ -14,10 +15,13 @@
     --color5: #402E2C;
 }
 
+/*evitar scroll horizontal e efeito suave da pagina*/
+
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
 
 header {
     background-color: var(--color2);
@@ -32,6 +36,11 @@ header {
     cursor: pointer;
 }
 
+.menu-hamburger:hover {
+    transform: scale(1.05);
+    
+}
+
 .menu-hamburger span {
     height: 2px;
     width: 100%;
@@ -39,12 +48,18 @@ header {
     display: block;
     margin-bottom: 4px;
 }
-
+/*estilo para icon close menu*/
 #menu-close {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+/*estilo para icon close menu*/
+#menu-close span:hover{
+    background-color: rgba(238, 181, 75, 0.411);
+    border-radius: 50%;
 }
 #menu-close span {
     font-size: 50px;
@@ -58,6 +73,7 @@ header {
     margin-left: 33.3vw;
 }
 
+/*estilo menu navegação*/
 #navbar {
     top: 0;
     left: 0;
@@ -71,6 +87,8 @@ header {
     border-radius: 0 0 10px 0;
     box-shadow: 2px 2px 5px black;
     padding: 8px;
+    font-size: 18px;
+    font-weight: bold;
 
 }
 
@@ -155,6 +173,12 @@ main {
     width: 100%;
     border-radius: 4px;
     box-shadow: 2px 2px 4px var(--color5);
+    overflow: hidden;
+    transition: transform 0.5s ease; /* Transição suave ao aplicar o zoom */
+}
+
+.content-produtos img:hover {
+    transform: scale(1.02); /* Aumenta a escala da imagem em 10% */
 }
 
 .content-produtos h3 {
@@ -184,6 +208,11 @@ main {
     box-shadow: 2px 2px 4px var(--color4);
     font-size: 16px;
 
+}
+
+.content-produtos button:hover {
+    background-color: var(--color5);
+    color: var(--color1);
 }
 
 .material-symbols-outlined {
@@ -292,6 +321,10 @@ main {
     height: 40px;
 }
 
+#form-main input, textarea:focus {
+        outline-color: var(--color3);
+    }
+
 
 #form-main textarea {
     margin: 20px 0;
@@ -309,6 +342,28 @@ main {
     font-size: 20px;
     font-weight: bold;
     background-color: var(--color3);
+}
+
+#form-main button:hover {
+    background-color: var(--color2);
+}
+
+/*estilo botão topo*/
+
+#topo {
+    background-image:var(--color1);
+    text-align: center;
+    font-size: 30px;
+    width: 30px;
+    height: auto;
+    display: none;
+    bottom: 175px;
+    right: 16px;
+    position: fixed;
+    z-index: 999;
+    border-radius: 0 0 10px 0;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
 }
 
 footer {

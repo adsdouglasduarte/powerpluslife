@@ -15,33 +15,34 @@
 
 <body>
     <header>
+        <!--icone menu hamburger-->
         <div class="menu-hamburger" aria-label="Menu">
             <span></span>
             <span></span>
             <span></span>
         </div>
-
-        <picture>
+        <!--logo do header-->
+        <picture id="inicio">
             <img src="./IMAGENS/logo.png" alt="" class="logo">
         </picture>
     </header>
-
+    <!--menu de navegação-->
     <nav id="navbar">
         <ul>
             <li><a href="#inicio">Início</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#produtos">Produtos</a></li>
             <li><a href="#resultados">Resultados</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#form-main">Contato</a></li>
         </ul>
-
+        <!--icone para fechar menu-->
         <div id="menu-close" aria-label="Menu">
             <span class="material-symbols-outlined">
                 close
-                </span>
+            </span>
         </div>
     </nav>
-
+    <!--Caroussel-->
     <section>
         <div id="carousel">
             <img src="https://via.placeholder.com/430x290" alt="#">
@@ -55,15 +56,15 @@
             <img src="https://via.placeholder.com/220x360" alt="#">
         </picture>
         <div class="text-sobreLoja">
-            <H2>Sobre a Loja</H2>
+            <H2 id="sobre">Sobre a Loja</H2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem architecto adipisci, incidunt
                 illo autem mollitia non praesentium omnis ad ex officiis s</p>
         </div>
     </main>
-
+<!--seção dos produtos-->
     <section>
         <div class="title-produtos">
-            <h2>Nossos Produtos</h2>
+            <h2 id="produtos">Nossos Produtos</h2>
         </div>
         <div class="responsive">
             <div class="content-produtos">
@@ -104,10 +105,10 @@
 
         </div>
     </section>
-
+<!--seção dos resultados-->
     <section>
         <div class="title-result">
-            <h2>Resultados Reais</h2>
+            <h2 id="resultados">Resultados Reais</h2>
         </div>
 
         <div id="galery-main">
@@ -142,7 +143,7 @@
             </div>
         </div>
     </section>
-
+<!--seção do formulario-->
     <section>
         <div class="title-contact">
             <h2>Fale conosco</h2>
@@ -154,31 +155,45 @@
             <label for="email">E-mail</label>
             <input type="email" id="email">
             <label for="tel">Telefone</label>
-            <input type="tel" id="tel">
+            <input type="tel" id="tel" required>
             <textarea name="menssage" id="menssage" placeholder="Sua menssagem"></textarea>
             <button type="submit">Enviar</button>
         </form>
     </section>
 
+    <!--botão para o topo-->
+    <div id="topo">
+        <span  class="material-symbols-outlined">
+            arrow_circle_up
+        </span>
+    </div>
+
+    <!--Footer do site-->
     <footer>
         <div class="icon-footer">
-            <img src="https://via.placeholder.com/30x30" alt="">
-            <img src="https://via.placeholder.com/30x30" alt="">
-            <img src="https://via.placeholder.com/30x30" alt="">
+            <a href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank">
+                <img src="https://via.placeholder.com/30x30" alt="Instagram"></a>
+            <a href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank">
+                <img src="https://via.placeholder.com/30x30" alt="facebook"></a>
+            <a href="https://www.youtube.com/" rel="noopener noreferrer" target="_blank">
+                <img src="https://via.placeholder.com/30x30" alt="youtube"></a>
+
         </div>
-        <p>&copy; 2024 - Todos os direitos reservados <a href="https://www.linkedin.com/in/douglas-duarte-55048530b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2B09tTtv7SP2cc8fN%2BA1pFQ%3D%3D">adsdouglasduarte</a></p>
+        <p>&copy; 2024 - Todos os direitos reservados <a
+                href="https://www.linkedin.com/in/douglas-duarte-55048530b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2B09tTtv7SP2cc8fN%2BA1pFQ%3D%3D"
+                target="_blank" rel="noopener noreferrer">adsdouglasduarte</a></p>
     </footer>
 
 
-
+<!--links dos scripts-->
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./js/jquery.mask.min.js"></script>
-    <script src="./js/jquery.validate.min.js"></script>
-    <script src="./js/messages_pt_BR.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="./scripts/jquery.mask.min.js"></script>
+    <script src="./scripts/jquery.validate.min.js"></script>
+    <script src="./scripts/messages_pt_BR.min.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
