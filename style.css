@@ -203,11 +203,16 @@ main {
     width: 100%;
     height: auto;
     flex-direction: column;
-    margin-left: 22px;
+    margin-left: 45px;
     border-radius: 8px;
     box-shadow: 2px 2px 4px var(--color4);
     font-size: 16px;
 
+}
+
+.content-produtos p {
+    font-size: 16px;
+    text-align: justify;
 }
 
 .content-produtos button:hover {
