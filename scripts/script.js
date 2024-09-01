@@ -47,16 +47,16 @@ $(document).ready(function () {
     // RETIRANDO AÇÃO PADRÃO DO FORMULÁRIO
     $('#form-main').on('submit', function (event) {
         event.preventDefault()
-        
-        if ($('#form-main').valid()) {
 
+        if ($('#form-main').valid()) {
             // Exibir alerta de sucesso
             alert('Sua mensagem foi enviada')
 
             // Limpar o formulário
             this.reset()
         } else {
-            alert('Dados Inválido.')
+            // Exibir alerta de erro
+            alert('Preencha o formulário corretamente')
         }
     })
 

@@ -38,7 +38,7 @@ header {
 
 .menu-hamburger:hover {
     transform: scale(1.05);
-    
+
 }
 
 .menu-hamburger span {
@@ -358,7 +358,7 @@ main {
     height: auto;
     display: none;
     bottom: 175px;
-    right: 16px;
+    right: 50px;
     position: fixed;
     z-index: 999;
     border-radius: 0 0 10px 0;
