@@ -1,15 +1,29 @@
-@media screen and (max-width: 768px) {
-    header {
-        grid-template-columns: 1fr; /* Modificando a estrutura do grid para telas menores */
-        padding: 8px; /* Ajustando o padding */
+/* Modo paisagem para smartphones */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    /* Estilos específicos para smartphones em modo paisagem */
+    #navbar {
+        height: 80vh;
     }
 
-    /* Outros estilos específicos para telas pequenas */
+    .img-sobreLoja {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .img-sobreLoja img {
+        width: 360px;
+        height: 360px;
+    }
+    
 }
 
+/* Modo retrato para tablets */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    /* Estilos específicos para tablets em modo retrato */
+}
+
+/* Desktops ou telas maiores */
 @media screen and (min-width: 769px) {
-    header {
-        grid-template-columns: 2fr 1fr; /* Revertendo para o estilo padrão em telas maiores */
-        padding: 16px;
-    }
+    /* Estilos específicos para desktops e telas maiores */
 }
