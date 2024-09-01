@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr; /* Modificando a estrutura do grid para telas menores */
+        padding: 8px; /* Ajustando o padding */
+    }
+
+    /* Outros estilos específicos para telas pequenas */
+}
+
+@media screen and (min-width: 769px) {
+    header {
+        grid-template-columns: 2fr 1fr; /* Revertendo para o estilo padrão em telas maiores */
+        padding: 16px;
+    }
+}
