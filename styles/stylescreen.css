@@ -1,5 +1,6 @@
 /* Modo paisagem para smartphones */
 @media screen and (max-width: 768px) and (orientation: landscape) {
+
     /* Estilos específicos para smartphones em modo paisagem */
     #navbar {
         height: 80vh;
@@ -15,7 +16,18 @@
         width: 360px;
         height: 360px;
     }
+
+    #form-style {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
     
+
+    
+
 }
 
 /* Modo retrato para tablets */
