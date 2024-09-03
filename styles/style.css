@@ -191,7 +191,7 @@ main {
 
 .content-produtos {
     display: flex;
-    height: 666.64px !important;
+    height: auto;
     padding: 8px;
     text-align: center;
     justify-content: center;
@@ -434,7 +434,8 @@ footer {
 
 }
 
-/*Tela horizontal celular*/
-@media screen {
-    
+footer a {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
 }
