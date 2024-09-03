@@ -1,3 +1,12 @@
+:root {
+    --color1: #F2F1DF;
+    --color2: #F2B279;
+    --color3: #D98C5F;
+    --color4: #8C4E37;
+    --color5: #402E2C;
+}
+
+
 /* Modo paisagem para smartphones */
 @media screen and (max-width: 768px) and (orientation: landscape) {
 
@@ -25,17 +34,129 @@
     }
 
     
-
-    
-
 }
 
 /* Modo retrato para tablets */
 @media screen and (max-width: 768px) and (orientation: portrait) {
     /* Estilos específicos para tablets em modo retrato */
+
+
+
+
+
+    
 }
 
 /* Desktops ou telas maiores */
 @media screen and (min-width: 769px) {
+
     /* Estilos específicos para desktops e telas maiores */
+    main {
+        display: flex;
+        height: 400px;
+    }
+
+    .img-sobreLoja {
+        background-color: var(--color2);
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+    }
+
+    .img-sobreLoja img {
+        display: flex;
+        width: 400px;
+        height: 400px;
+    }
+
+    .text-sobreLoja {
+        display: flex;
+        height: 400px;
+    }
+
+
+
+    .content-produtos {
+        display: flex;
+        margin-bottom: 80px;
+    }
+
+    .content-produtos button {
+        height: 50px;
+        width: 150px;
+        margin-left: 75px;
+
+    }
+
+    .responsive {
+        width: 100%;
+        padding-bottom: 50px;
+        background-color: var(--color2);
+        box-shadow: 2px 2px 16px var(--color2);
+    }
+
+    #form-style {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar {
+        top: 0;
+        left: 0;
+        display:flex;
+        position: fixed;
+        color: #fff;
+        background-color: var(--color1);
+        width: 100vw;
+        height: auto;
+        z-index: 999;
+        border-radius: 0 0 10px 0;
+        box-shadow: 2px 2px 5px black;
+        padding: 8px;
+    }
+
+    #navbar ul {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        text-align: center;
+        gap: 50px;
+        justify-content: center;
+
+    }
+
+
+    #navbar li {
+        list-style: none;
+        line-height: 30px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.233);
+    }
+
+    header {
+        margin-top: 50px;
+    }
+
+
+    #menu-close {
+        display: none;
+    }
+
+    .menu-hamburger {
+        display: none;
+    }
+
+    body {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: block;
+        max-width: 1284px;
+        margin: 0 auto;
+        background-color: var(--color1);
+    }
+
+    
 }

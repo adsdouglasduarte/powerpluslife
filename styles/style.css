@@ -332,8 +332,8 @@ main {
 
 
 .title-contact {
-    width: 100vw;
     display: flex;
+    width: 100%;
     background-color: var(--color3);
     color: rgb(219, 216, 216);
     text-align: center;

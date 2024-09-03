@@ -4,7 +4,31 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 2000,
         dots: false,
-        arrows: false
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 768, // Para telas menores ou iguais a 768px
+                settings: {
+                    slidesToShow: 1, // Mostrar uma imagem por vez
+                    slidesToScroll: 1,
+                    autoplaySpeed: 3000, // Tempo de autoplay ajustado
+                }
+            },
+            {
+                breakpoint: 1200, // Para telas maiores que 768px mas menores que 1200px
+                settings: {
+                    slidesToShow: 1, // Mostrar duas imagens por vez
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 1600, // Para telas maiores que 1200px
+                settings: {
+                    slidesToShow: 1, // Mostrar três imagens por vez
+                    slidesToScroll: 1
+                }
+            }
+        ]
     })
 
     let inactivityTimer
@@ -62,9 +86,14 @@ $(document).ready(function () {
 
     // OUVIDOR DO EVENTO MENU HAMBURGER SLIDE TOGGLE ABRIR
     $('.menu-hamburger').on('click', function () {
-        $('#navbar').animate({
-            width: 'toggle'
-        }, 300)
+        if ($(window).width() <= 769) { // Verifica se a largura da tela é menor ou igual a 769px
+            $('#navbar').animate({
+                width: 'toggle'
+            }, 300)
+        } else {
+            // Comportamento para larguras maiores, se necessário
+            console.log('Largura da tela maior que 769px');
+        }
     })
 
     // OUVIDOR DO EVENTO MENU CLOSE SLIDE TOGGLE FECHAR
@@ -85,7 +114,7 @@ $(document).ready(function () {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 4,
                     slidesToScroll: 3,
                     infinite: true,
                     dots: true
