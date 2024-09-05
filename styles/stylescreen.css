@@ -38,8 +38,9 @@
     }
 
     .img-sobreLoja img {
-        width: 360px;
-        height: 360px;
+        display: block;
+        width: 400px;
+        height:auto;
     }
 
     #form-style {
@@ -95,8 +96,8 @@
 
     .img-sobreLoja img {
         display: flex;
-        width: 400px;
-        height: 400px;
+        max-width: 500px;
+        height: auto;
     }
 
     .text-sobreLoja {
