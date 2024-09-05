@@ -1,35 +1,36 @@
 $(document).ready(function () {
-    // Carrossel Slick
-    $('#carousel').slick({
-        autoplay: true,
-        autoplaySpeed: 2000,
-        dots: false,
-        arrows: false,
-        responsive: [
-            {
-                breakpoint: 768, // Para telas menores ou iguais a 768px
-                settings: {
-                    slidesToShow: 1, // Mostrar uma imagem por vez
-                    slidesToScroll: 1,
-                    autoplaySpeed: 3000, // Tempo de autoplay ajustado
-                }
-            },
-            {
-                breakpoint: 1200, // Para telas maiores que 768px mas menores que 1200px
-                settings: {
-                    slidesToShow: 1, // Mostrar duas imagens por vez
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 1600, // Para telas maiores que 1200px
-                settings: {
-                    slidesToShow: 1, // Mostrar três imagens por vez
-                    slidesToScroll: 1
-                }
+   // Carrossel Slick
+$('#carousel').slick({
+    autoplay: true,
+    autoplaySpeed: 2000, // Tempo de autoplay para todas as telas
+    dots: false,
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 768, // Para telas menores ou iguais a 768px
+            settings: {
+                slidesToShow: 1, // Sempre uma imagem por vez
+                slidesToScroll: 1,
+                autoplaySpeed: 3000, // Tempo de autoplay ajustado para telas pequenas
             }
-        ]
-    })
+        },
+        {
+            breakpoint: 1200, // Para telas maiores que 768px
+            settings: {
+                slidesToShow: 1, // Sempre uma imagem por vez
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 1600, // Para telas maiores que 1200px
+            settings: {
+                slidesToShow: 1, // Sempre uma imagem por vez
+                slidesToScroll: 1
+            }
+        }
+    ]
+})
+
 
     let inactivityTimer
     
